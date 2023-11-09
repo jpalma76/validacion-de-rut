@@ -2,31 +2,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejercicio</title>
+    <title>Validación de Rut Chileno</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <div class="container">
-        
-        <h1 class="title">Prueba de código</h1>
-        <form id="formulario" class="formulario" method="post">
-            <div class="rut">
-                <label class="label" for="txt-rut">Ingresa tu rut:</label>
-                <input type="text" name="txt-rut" id="txt-rut">
-                <br>
-                
-            </div>
-            <div class="message" id="message">formatos permitidos: "12.345.678-9"<br> o "12345678-9"</div>
-            <div class="button-enviar">
-                <button type="submit" class="btn-validar" id="validar">Validar</button>
-                <button type="submit" class="btn-limpiar" id="limpiar">Limpiar</button>
-            </div>
-        </form>
 
+    <nav class="navbar justify-content-center">
+        <h2>Validación de Rut Chileno</h2>
+    </nav>
+
+   
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header">
+                        Validación de Rut Chileno
+                    </div>
+                    <div class="card-body">
+
+                        <form id="formulario" class="form-validation" method="post">
+                            <div class = "form-group mb-2">
+                                <label for="txtRut">Rut:</label>
+                                <input type="text" class="form-control" id="txtRut" placeholder="Ingrese el rut a validar" required>
+                                <div id="message"></div>
+                            </div>
+
+                            <input type="submit" class="btn btn-primary btn-sm" id="ingresar" value="Ingresar">
+                            <button type="submit" class="btn btn-danger btn-sm" id="borrar">Borrar</button>
+                        </form>
+
+                    </div>
+                </div>                
+            </div>
+        
+        </div>
     </div>
 
-    <script src="./js/ejercicio.js"></script>
+    <script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/rutVerificador.js"></script>
 </body>
 </html>
