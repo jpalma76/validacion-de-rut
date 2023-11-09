@@ -10,11 +10,9 @@
 
 .success {
     color: green;
-    font-weight: bold;
     font-style: italic;
 }
 .error {
     color: red;
-    font-weight: bold;
     font-style: italic;
 }
